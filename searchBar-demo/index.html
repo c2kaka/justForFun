@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh_Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./iconfont.js"></script>
+    <title>SearchBarDemo</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <span class="inputWrapper">
+            <input id="keyword" type="text" autocomplete="off">
+            <span class="floatSpan">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-mic"></use>
+                </svg>
+                <span class="splitLine"></span>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-camera"></use>
+                </svg>
+            </span>
+        </span>
+        <button>百度一下</button>
+        <ul id="suggestion" class="suggestion">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

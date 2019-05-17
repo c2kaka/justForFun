@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+body {
+    border: 1px solid black;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.suggestion {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    border-right: 1px solid #888;
+    border-left: 1px solid #888;
+    border-bottom: 1px solid #888;
+    width: 540px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.suggestion.active {
+    display: block;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+}
+
+.inputWrapper {
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+.floatSpan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    margin-right: 10px;
+    color: #b8b8b8;
+}
+
+.floatSpan>.splitLine {
+    height: 16px;
+    width: 0;
+    border-left: 1px solid;
+    margin: 0 10px;
+}
+
+.floatSpan>svg {
+    height: 20px;
+    width: 20px;
+    fill: #b8b8b8;
+}
+
+.floatSpan>svg:hover {
+    cursor: pointer;
+    fill: #4b94fc;
+}
+
+
+button {
+    border: none;
+    background: #3988fb;
+    color: white;
+    font-size: 14px;
+    padding: 0 20px;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background: #3781f0;
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.inputWrapper input[type=text] {
+    border: 1px solid #b8b8b8;
+    width: 540px;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 8px;
+    font-size: 17px;
+}
+
+.inputWrapper input[type=text]:focus {
+    outline: none;
+    border: 1px solid #4b94fc;
+}
