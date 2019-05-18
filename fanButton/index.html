@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="buttonList">
+        <button id="fanButton" type="button" class="fanButton">
+            <span class="circle"></span>
+            button
+        </button>
+    </div>
+    <script>
+        let fanButton = document.getElementById("fanButton");
+        fanButton.onclick = function (e) {
+            fanButton.querySelector('.circle').classList.add('active');
+        }
+
+        fanButton.querySelector(".circle").addEventListener("transitionend", function () {
+            fanButton.querySelector('.circle').classList.remove('active');
+        })
+    </script>
+</body>
+
+</html>

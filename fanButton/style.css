@@ -1,0 +1,44 @@
+.fanButton {
+    display: inline-block;
+    box-sizing: border-box;
+    text-decoration: none;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    padding: 0 16px;
+    border: none;
+    position: relative;
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.fanButton:focus {
+    outline: none;
+    background: #e5e5e5;
+}
+
+.fanButton:hover {
+    background: #e5e5e5;
+}
+
+.fanButton>.circle {
+    height: 10px;
+    width: 10px;
+    background: rgba(130, 138, 138, 0.6);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -5px;
+    margin-top: -5px;
+    border-radius: 50%;
+    transition: transform 0.5s;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.fanButton>.circle.active {
+    transform: scale(10);
+    visibility: visible;
+}
